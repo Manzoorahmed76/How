@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Vortex-Translator - 107+ Languages Supported</title>
+  <link href="{{ url_for('static', filename='attractcss/main.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='attractcss/animation.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css-ui/upronpirer.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css-ui/uiplandesign.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css-ui/spotstatic.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css-ui/indane.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css-ui/contpin.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css-ui/vortexpipeline.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css-ui/vortexsnapline.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css-ui/scrollbaar.css') }}" rel="stylesheet">
+</head>
+<body class="p-4 md:p-6">
+
+  <header class="text-center mb-10 animate__animated animate__fadeInDown">
+    <h1 class="text-3xl font-bold text-white-800">
+      <span class="text-indigo-600">𝙑𝙤𝙧𝙩𝙚𝙭𝙏𝙧𝙖𝙣𝙨𝙡𝙖𝙩𝙤𝙧</span>
+    </h1>
+    <p class="text-gray-600 mt-2">Translate between 107+ languages instantly</p>
+  </header>
+  <br><br><br>
+
+<main class="max-w-4xl mx-auto">
+    <div class="glass p-6 animate__animated animate__fadeIn">
+      <div class="flex flex-row justify-between items-center mb-6">
+        <div class="w-5/12">
+          <label for="from-language" class="block text-sm font-medium text-gray-700 mb-1">Translate from</label>
+<select id="from-language" class="language-select">
+    <option value="auto" selected>Auto Detect</option>
+    <option value="af">Afrikaans</option>
+    <option value="sq">Albanian</option>
+    <option value="am">Amharic</option>
+    <option value="ar">Arabic</option>
+    <option value="hy">Armenian</option>
+    <option value="az">Azerbaijani</option>
+    <option value="eu">Basque</option>
+    <option value="be">Belarusian</option>
+    <option value="bn">Bengali</option>
+    <option value="bs">Bosnian</option>
+    <option value="bg">Bulgarian</option>
+    <option value="ca">Catalan</option>
+    <option value="ceb">Cebuano</option>
+    <option value="ny">Chichewa</option>
+    <option value="zh-cn">Chinese (Simplified)</option>
+    <option value="zh-tw">Chinese (Traditional)</option>
+    <option value="co">Corsican</option>
+    <option value="hr">Croatian</option>
+    <option value="cs">Czech</option>
+    <option value="da">Danish</option>
+    <option value="nl">Dutch</option>
+    <option value="en">English</option>
+    <option value="eo">Esperanto</option>
+    <option value="et">Estonian</option>
+    <option value="tl">Filipino</option>
+    <option value="fi">Finnish</option>
+    <option value="fr">French</option>
+    <option value="fy">Frisian</option>
+    <option value="gl">Galician</option>
+    <option value="ka">Georgian</option>
+    <option value="de">German</option>
+    <option value="el">Greek</option>
+    <option value="gu">Gujarati</option>
+    <option value="ht">Haitian Creole</option>
+    <option value="ha">Hausa</option>
+    <option value="haw">Hawaiian</option>
+    <option value="he">Hebrew</option>
+    <option value="hi">Hindi</option>
+    <option value="hmn">Hmong</option>
+    <option value="hu">Hungarian</option>
+    <option value="is">Icelandic</option>
+    <option value="ig">Igbo</option>
+    <option value="id">Indonesian</option>
+    <option value="ga">Irish</option>
+    <option value="it">Italian</option>
+    <option value="ja">Japanese</option>
+    <option value="jw">Javanese</option>
+    <option value="kn">Kannada</option>
+    <option value="kk">Kazakh</option>
+    <option value="km">Khmer</option>
+    <option value="ko">Korean</option>
+    <option value="ku">Kurdish (Kurmanji)</option>
+    <option value="ky">Kyrgyz</option>
+    <option value="lo">Lao</option>
+    <option value="la">Latin</option>
+    <option value="lv">Latvian</option>
+    <option value="lt">Lithuanian</option>
+    <option value="lb">Luxembourgish</option>
+    <option value="mk">Macedonian</option>
+    <option value="mg">Malagasy</option>
+    <option value="ms">Malay</option>
+    <option value="ml">Malayalam</option>
+    <option value="mt">Maltese</option>
+    <option value="mi">Maori</option>
+    <option value="mr">Marathi</option>
+    <option value="mn">Mongolian</option>
+    <option value="my">Myanmar (Burmese)</option>
+    <option value="ne">Nepali</option>
+    <option value="no">Norwegian</option>
+    <option value="or">Odia</option>
+    <option value="ps">Pashto</option>
+    <option value="fa">Persian</option>
+    <option value="pl">Polish</option>
+    <option value="pt">Portuguese</option>
+    <option value="pa">Punjabi</option>
+    <option value="ro">Romanian</option>
+    <option value="ru">Russian</option>
+    <option value="sm">Samoan</option>
+    <option value="gd">Scots Gaelic</option>
+    <option value="sr">Serbian</option>
+    <option value="st">Sesotho</option>
+    <option value="sn">Shona</option>
+    <option value="sd">Sindhi</option>
+    <option value="si">Sinhala</option>
+    <option value="sk">Slovak</option>
+    <option value="sl">Slovenian</option>
+    <option value="so">Somali</option>
+    <option value="es">Spanish</option>
+    <option value="su">Sundanese</option>
+    <option value="sw">Swahili</option>
+    <option value="sv">Swedish</option>
+    <option value="tg">Tajik</option>
+    <option value="ta">Tamil</option>
+    <option value="te">Telugu</option>
+    <option value="th">Thai</option>
+    <option value="tr">Turkish</option>
+    <option value="uk">Ukrainian</option>
+    <option value="ur">Urdu</option>
+    <option value="ug">Uyghur</option>
+    <option value="uz">Uzbek</option>
+    <option value="vi">Vietnamese</option>
+    <option value="cy">Welsh</option>
+    <option value="xh">Xhosa</option>
+    <option value="yi">Yiddish</option>
+    <option value="yo">Yoruba</option>
+    <option value="zu">Zulu</option>
+</select>
+        </div>
+        
+<div class="swap-btn mx-4" id="swap-languages">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M16 4l4 4-4 4"></path>
+    <path d="M8 20l-4-4 4-4"></path>
+    <path d="M20 8H10"></path>
+    <path d="M4 16h10"></path>
+  </svg>
+</div>
+        
+        <div class="w-5/12">
+          <label for="to-language" class="block text-sm font-medium text-gray-700 mb-1">Translate to</label>
+          <select id="to-language" class="language-select">
+    <option value="af">Afrikaans</option>
+    <option value="sq">Albanian</option>
+    <option value="am">Amharic</option>
+    <option value="ar">Arabic</option>
+    <option value="hy">Armenian</option>
+    <option value="az">Azerbaijani</option>
+    <option value="eu">Basque</option>
+    <option value="be">Belarusian</option>
+    <option value="bn">Bengali</option>
+    <option value="bs">Bosnian</option>
+    <option value="bg">Bulgarian</option>
+    <option value="ca">Catalan</option>
+    <option value="ceb">Cebuano</option>
+    <option value="ny">Chichewa</option>
+    <option value="zh-cn">Chinese (Simplified)</option>
+    <option value="zh-tw">Chinese (Traditional)</option>
+    <option value="co">Corsican</option>
+    <option value="hr">Croatian</option>
+    <option value="cs">Czech</option>
+    <option value="da">Danish</option>
+    <option value="nl">Dutch</option>
+    <option value="en" selected>English</option>
+    <option value="eo">Esperanto</option>
+    <option value="et">Estonian</option>
+    <option value="tl">Filipino</option>
+    <option value="fi">Finnish</option>
+    <option value="fr">French</option>
+    <option value="fy">Frisian</option>
+    <option value="gl">Galician</option>
+    <option value="ka">Georgian</option>
+    <option value="de">German</option>
+    <option value="el">Greek</option>
+    <option value="gu">Gujarati</option>
+    <option value="ht">Haitian Creole</option>
+    <option value="ha">Hausa</option>
+    <option value="haw">Hawaiian</option>
+    <option value="he">Hebrew</option>
+    <option value="hi">Hindi</option>
+    <option value="hmn">Hmong</option>
+    <option value="hu">Hungarian</option>
+    <option value="is">Icelandic</option>
+    <option value="ig">Igbo</option>
+    <option value="id">Indonesian</option>
+    <option value="ga">Irish</option>
+    <option value="it">Italian</option>
+    <option value="ja">Japanese</option>
+    <option value="jw">Javanese</option>
+    <option value="kn">Kannada</option>
+    <option value="kk">Kazakh</option>
+    <option value="km">Khmer</option>
+    <option value="ko">Korean</option>
+    <option value="ku">Kurdish (Kurmanji)</option>
+    <option value="ky">Kyrgyz</option>
+    <option value="lo">Lao</option>
+    <option value="la">Latin</option>
+    <option value="lv">Latvian</option>
+    <option value="lt">Lithuanian</option>
+    <option value="lb">Luxembourgish</option>
+    <option value="mk">Macedonian</option>
+    <option value="mg">Malagasy</option>
+    <option value="ms">Malay</option>
+    <option value="ml">Malayalam</option>
+    <option value="mt">Maltese</option>
+    <option value="mi">Maori</option>
+    <option value="mr">Marathi</option>
+    <option value="mn">Mongolian</option>
+    <option value="my">Myanmar (Burmese)</option>
+    <option value="ne">Nepali</option>
+    <option value="no">Norwegian</option>
+    <option value="or">Odia</option>
+    <option value="ps">Pashto</option>
+    <option value="fa">Persian</option>
+    <option value="pl">Polish</option>
+    <option value="pt">Portuguese</option>
+    <option value="pa">Punjabi</option>
+    <option value="ro">Romanian</option>
+    <option value="ru">Russian</option>
+    <option value="sm">Samoan</option>
+    <option value="gd">Scots Gaelic</option>
+    <option value="sr">Serbian</option>
+    <option value="st">Sesotho</option>
+    <option value="sn">Shona</option>
+    <option value="sd">Sindhi</option>
+    <option value="si">Sinhala</option>
+    <option value="sk">Slovak</option>
+    <option value="sl">Slovenian</option>
+    <option value="so">Somali</option>
+    <option value="es">Spanish</option>
+    <option value="su">Sundanese</option>
+    <option value="sw">Swahili</option>
+    <option value="sv">Swedish</option>
+    <option value="tg">Tajik</option>
+    <option value="ta">Tamil</option>
+    <option value="te">Telugu</option>
+    <option value="th">Thai</option>
+    <option value="tr">Turkish</option>
+    <option value="uk">Ukrainian</option>
+    <option value="ur">Urdu</option>
+    <option value="ug">Uyghur</option>
+    <option value="uz">Uzbek</option>
+    <option value="vi">Vietnamese</option>
+    <option value="cy">Welsh</option>
+    <option value="xh">Xhosa</option>
+    <option value="yi">Yiddish</option>
+    <option value="yo">Yoruba</option>
+    <option value="zu">Zulu</option>
+          </select>
+        </div>
+      </div>
+      
+      <div class="mb-6">
+        <label for="input-text" class="block text-sm font-medium text-gray-700 mb-1">Enter text</label>
+        <textarea id="input-text" class="text-area" placeholder="Type or paste your text here..."></textarea>
+        <div class="flex justify-between text-xs text-gray-500 mt-1">
+          <span id="char-count">0 Characters</span>
+          <button id="clear-input" class="px-4 py-2 rounded-lg bg-indigo-600 text-white font-semibold shadow-md hover:bg-indigo-700 hover:shadow-lg active:bg-indigo-800 transition-all duration-300">
+  Clear
+</button>
+        </div>
+      </div>
+      
+      <div class="flex justify-center mb-6" id="translate-btn-container">
+        <button id="translate-btn" class="btn-translate flex items-center">
+          <span>Translate</span>
+          <div id="loader" class="loader ml-2"></div>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+          </svg>
+        </button>
+      </div>
+      
+      <div class="mb-6 relative">
+        <label for="output-text" class="block text-sm font-medium text-gray-700 mb-1">Translation</label>
+        <div id="output-text" class="output-area"></div>
+        <button id="play-btn" class="copy-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline-block mr-1" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+          </svg>
+          Play
+        </button>
+        <button id="copy-btn" class="copy-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline-block mr-1" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M8 2a1 1 0 000 2h2a1 1 0 100-2H8z" />
+            <path d="M3 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v6h-4.586l1.293-1.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L10.414 13H15v3a2 2 0 01-2 2H5a2 2 0 01-2-2V5zM15 11h2a1 1 0 010 2h-2v-2z" />
+          </svg>
+          Copy
+        </button>
+      </div>
+                        <div class="toggle-container animate__animated animate__fadeIn">
+    <span class="toggle-label">Real Time Translation</span>
+    <label class="toggle-switch">
+      <input type="checkbox" id="real-time-toggle">
+      <span class="toggle-slider"></span>
+    </label>
+    </div>
+    
+    <hr class="my-6 border-t border-gray-400">
+
+    <div class="mt-12 animate__animated animate__fadeInUp">
+      <h2 class="text-xl font-bold text-Purple-800 text-center mb-6">Popular Languages</h2>
+      <div class="flex flex-wrap justify-center">
+        <span class="language-pill">English</span>
+        <span class="language-pill">Hindi</span>
+        <span class="language-pill">French</span>
+        <span class="language-pill">German</span>
+        <span class="language-pill">Arabic</span>
+        <span class="language-pill">Russian</span>
+        <span class="language-pill">Portuguese</span>
+        <span class="language-pill">Japanese</span>
+        <span class="language-pill">Chinese</span>
+        <span class="language-pill">+ 98 more</span>
+      </div>
+    </div>
+
+    <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 animate__animated animate__fadeInUp">
+      <div class="text-center">
+        <div class="flex justify-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="feature-icon floating" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M7 2a1 1 0 011 1v1h3a1 1 0 110 2H9.20l-.24.691a5.99 5.99 0 01-2.72 3.538l-.132.099a3 3 0 00-1.143 1.263l-.216.54-1.892-.632a1 1 0 01-.628-1.269l.206-.515a5 5 0 011.905-2.105l.223-.167A3.99 3.99 0 016.6 4H5a1 1 0 110-2h2V2a1 1 0 011 1zm3 6a1 1 0 110 2H4a1 1 0 110-2h6zM2 12a1 1 0 011-1h7a1 1 0 110 2H3a1 1 0 01-1-1zm11-1a1 1 0 100 2 1 1 0 000-2zm-2-8a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd" />
+          </svg>
+        </div>
+        <h3 class="font-semibold text-lg mb-2">107+ Languages</h3>
+        <p class="text-gray-600 text-sm">Translate to and from over 107 languages from around the world</p>
+      </div>
+      
+      <div class="text-center">
+        <div class="flex justify-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="feature-icon floating" style="animation-delay: 0.5s;" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" />
+          </svg>
+        </div>
+        <h3 class="font-semibold text-lg mb-2">instant Translation</h3>
+        <p class="text-gray-600 text-sm">Get translations quickly with our advanced language processing system</p>
+      </div>
+      
+      <div class="text-center">
+        <div class="flex justify-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="feature-icon floating" style="animation-delay: 1s;" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
+          </svg>
+        </div>
+        <h3 class="font-semibold text-lg mb-2">Accurate & Reliable</h3>
+        <p class="text-gray-600 text-sm">Our algorithms provide high-quality translations you can trust</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="mt-16 text-center text-gray-500 text-sm">
+    <p>© 2025 VortexTranslator. All rights reserved.</p>
+  </footer>
+  
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const fromLanguageSelect = document.getElementById('from-language');
+  const toLanguageSelect = document.getElementById('to-language');
+  const inputTextArea = document.getElementById('input-text');
+  const outputTextDiv = document.getElementById('output-text');
+  const translateBtn = document.getElementById('translate-btn');
+  const translateBtnContainer = document.getElementById('translate-btn-container');
+  const charCount = document.getElementById('char-count');
+  const clearInputBtn = document.getElementById('clear-input');
+  const swapLanguagesBtn = document.getElementById('swap-languages');
+  const copyBtn = document.getElementById('copy-btn');
+  const playBtn = document.getElementById('play-btn');
+  const loader = document.getElementById('loader');
+  const realTimeToggle = document.getElementById('real-time-toggle');
+  
+  outputTextDiv.style.wordBreak = 'break-word';
+  outputTextDiv.style.overflowWrap = 'break-word';
+  outputTextDiv.style.whiteSpace = 'pre-wrap';
+  
+  copyBtn.style.display = 'none';
+  playBtn.style.display = 'none';
+  
+  let translationTimer;
+  const DEBOUNCE_TIME = 500;
+  
+  let animationInterval;
+  let isTranslating = false;
+  let isFirstTranslation = true;
+  let audioPlayer = null;
+  
+  function checkRealTimeToggle() {
+    if (realTimeToggle.checked) {
+      translateBtnContainer.style.display = 'none';
+    } else {
+      translateBtnContainer.style.display = 'flex';
+    }
+  }
+  
+  checkRealTimeToggle();
+  
+  realTimeToggle.addEventListener('change', function() {
+    checkRealTimeToggle();
+  });
+
+  function toggleCopyButton() {
+    if (outputTextDiv.textContent.trim()) {
+      copyBtn.style.display = 'inline-block';
+      playBtn.style.display = 'inline-block';
+    } else {
+      copyBtn.style.display = 'none';
+      playBtn.style.display = 'none';
+    }
+  }
+
+  function animateDots() {
+    const positions = [0, 0, 0];
+    const maxDisplacement = 5;
+    const directions = [1, 1, 1]; // 1 = moving down, -1 = moving up
+    
+    animationInterval = setInterval(() => {
+      if(!isTranslating) {
+        clearInterval(animationInterval);
+        return;
+      }
+      
+      let currentText = outputTextDiv.textContent;
+      currentText = currentText.replace(/\s*\.\.\..*$/, '');
+      
+      let dots = '';
+      for(let i = 0; i < 3; i++) {
+        positions[i] += directions[i];
+        
+        if (Math.abs(positions[i]) >= maxDisplacement) {
+          directions[i] *= -1;
+        }
+        
+        dots += `<span style="position: relative; top: ${positions[i]}px; font-weight: bold; font-size: 18px;">.</span>`;
+      }
+      
+      if (isFirstTranslation && !currentText.trim()) {
+        outputTextDiv.innerHTML = 'Translating' + dots;
+      } else {
+        outputTextDiv.innerHTML = currentText + dots;
+      }
+    }, 100);
+  }
+
+  async function translateText() {
+    const inputText = inputTextArea.value.trim();
+    if (!inputText) return;
+
+    const fromLang = fromLanguageSelect.value;
+    const toLang = toLanguageSelect.value;
+
+    loader.style.display = 'inline-block';
+    
+    isTranslating = true;
+    
+    if (isFirstTranslation && !outputTextDiv.textContent.trim()) {
+      outputTextDiv.innerHTML = 'Translating<span style="font-weight: bold;">...</span>';
+    } else {
+      let currentText = outputTextDiv.textContent;
+      currentText = currentText.replace(/\s*\.\.\..*$/, '');
+      outputTextDiv.innerHTML = currentText + '<span style="font-weight: bold;">...</span>';
+    }
+    
+    animateDots();
+
+    try {
+      const response = await fetch(`/translate?from=${fromLang}&text=${encodeURIComponent(inputText)}&to=${toLang}`);
+      const translatedText = await response.text();
+
+      isTranslating = false;
+      clearInterval(animationInterval);
+      
+      if (isFirstTranslation) {
+        let i = 0;
+        function typeEffect() {
+          if (i < translatedText.length) {
+            outputTextDiv.textContent = translatedText.substring(0, i+1);
+            i++;
+            setTimeout(typeEffect, 19);
+          } else {
+            // Set first translation to false after completion
+            isFirstTranslation = false;
+            // Check if copy button should be shown
+            toggleCopyButton();
+          }
+        }
+        typeEffect();
+      } else {
+        outputTextDiv.textContent = translatedText;
+        toggleCopyButton();
+      }
+
+    } catch (error) {
+      isTranslating = false;
+      clearInterval(animationInterval);
+      outputTextDiv.textContent = 'Translation failed. Try again.';
+      toggleCopyButton();
+    } finally {
+      loader.style.display = 'none';
+    }
+  }
+  
+  function debouncedTranslate() {
+    clearTimeout(translationTimer);
+    translationTimer = setTimeout(translateText, DEBOUNCE_TIME);
+  }
+
+  inputTextArea.addEventListener('input', function() {
+    charCount.textContent = `${this.value.length} Characters`;
+    
+    if (realTimeToggle.checked && this.value.trim()) {
+      debouncedTranslate();
+    }
+  });
+
+  translateBtn.addEventListener('click', function() {
+    isFirstTranslation = true;
+    translateText();
+  });
+
+  swapLanguagesBtn.addEventListener('click', function() {
+    const fromValue = fromLanguageSelect.value;
+    const toValue = toLanguageSelect.value;
+
+    if (fromValue === "auto") {
+      alert("Auto Detect Language Cannot Be Swapped. Please Try Another Language.");
+      return;
+    }
+
+    fromLanguageSelect.value = toValue;
+    toLanguageSelect.value = fromValue;
+
+    if (outputTextDiv.textContent) {
+      const inputText = inputTextArea.value;
+      inputTextArea.value = outputTextDiv.textContent;
+      outputTextDiv.textContent = inputText;
+      charCount.textContent = `${inputTextArea.value.length} Characters`;
+
+      toggleCopyButton();
+      
+      if (realTimeToggle.checked && inputTextArea.value.trim()) {
+        debouncedTranslate();
+      }
+    }
+  });
+  
+  fromLanguageSelect.addEventListener('change', function() {
+    if (realTimeToggle.checked && inputTextArea.value.trim()) {
+      debouncedTranslate();
+    }
+  });
+  
+  toLanguageSelect.addEventListener('change', function() {
+    if (realTimeToggle.checked && inputTextArea.value.trim()) {
+      debouncedTranslate();
+    }
+  });
+
+  copyBtn.addEventListener('click', function() {
+    if (outputTextDiv.textContent.trim()) {
+      navigator.clipboard.writeText(outputTextDiv.textContent).then(function() {
+        copyBtn.innerHTML = 'Copied!';
+        setTimeout(() => copyBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline-block mr-1" viewBox="0 0 20 20" fill="currentColor"><path d="M8 2a1 1 0 000 2h2a1 1 0 100-2H8z" /><path d="M3 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v6h-4.586l1.293-1.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L10.414 13H15v3a2 2 0 01-2 2H5a2 2 0 01-2-2V5zM15 11h2a1 1 0 010 2h-2v-2z" /></svg>Copy', 2000);
+      }).catch(err => {
+        console.error('Copy failed:', err);
+      });
+    }
+  });
+  
+  playBtn.addEventListener('click', function() {
+    if (outputTextDiv.textContent.trim()) {
+      const toLang = toLanguageSelect.value;
+      const textToSpeak = outputTextDiv.textContent;
+      
+      if (audioPlayer) {
+        audioPlayer.pause();
+        audioPlayer = null;
+      }
+      
+      playBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline-block mr-1 animate-spin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>Wait...';
+      
+      audioPlayer = new Audio(`/speech-api?speak=${encodeURIComponent(textToSpeak)}&lang=${toLang}`);
+      
+      audioPlayer.oncanplaythrough = function() {
+        playBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline-block mr-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" /></svg>Playing...';
+        audioPlayer.play();
+      };
+      
+      audioPlayer.onerror = function() {
+        playBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline-block mr-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" /></svg>Play';
+        alert('Speech playback failed. Please try again.');
+      };
+      
+      audioPlayer.onended = function() {
+        playBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline-block mr-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" /></svg>Play';
+        audioPlayer = null;
+      };
+    }
+  });
+
+  clearInputBtn.addEventListener('click', function() {
+    inputTextArea.value = '';
+    outputTextDiv.textContent = '';
+    charCount.textContent = '0 Characters';
+    isFirstTranslation = true;
+    toggleCopyButton();
+    
+    if (audioPlayer) {
+      audioPlayer.pause();
+      audioPlayer = null;
+    }
+  });
+
+  inputTextArea.addEventListener('input', function() {
+    charCount.textContent = `${this.value.length} Characters`;
+  });
+});
+</script>
+</body>
+</html>

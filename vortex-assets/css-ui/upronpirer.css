@@ -1,0 +1,30 @@
+    .feature-icon {
+      width: 48px;
+      height: 48px;
+      fill: var(--primary);
+    }
+    
+    .language-pill {
+      background-color: white;
+      border-radius: 20px;
+      padding: 6px 12px;
+      margin: 4px;
+      font-size: 12px;
+      display: inline-block;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      animation: fadeIn 0.5s;
+      transition: all 0.3s;
+    }
+    
+    .language-pill:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: var(--primary);
+      color: white;
+    }
+    
+    @keyframes floatAnimation {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }

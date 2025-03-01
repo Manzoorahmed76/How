@@ -1,0 +1,36 @@
+    .copy-btn {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background-color: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 4px;
+      padding: 4px 8px;
+      font-size: 12px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    
+    .copy-btn:hover {
+      background-color: var(--primary);
+      color: white;
+    }
+    
+    .typing-animation::after {
+      content: '|';
+      animation: blink 1s infinite;
+    }
+    
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+    
+            * {
+    outline: none !important;
+    -webkit-tap-highlight-color: transparent;
+    }
+
+    *:focus-visible {
+    outline: 2px solid #your-color;
+    }
